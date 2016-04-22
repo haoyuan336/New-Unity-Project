@@ -9,9 +9,10 @@ public class fireworkCell : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+	int destoryTime = Random.Range(100,200);
 	int notTime = 0;
 	void Update () {
-		if (notTime > 500){
+		if (notTime > destoryTime){
 			notTime = 0;
 			Destroy (transform.gameObject);
 		}
